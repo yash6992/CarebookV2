@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:background="@drawable/bg1"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" android:textSize="13dp"
+        android:layout_marginBottom="14dp"
+        android:gravity="center_horizontal"
+        android:text="Carebook is a simple way to connect to your doctor."
+        android:textAlignment="gravity"
+        android:textColor="#adbece" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="156dp"
+        android:text="Hello Aayush !!!"
+        android:textColor="#adbece"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:src="@drawable/pp" />
+
+    <TextView
+        android:id="@+id/textViewTesting" android:textColor="#ffff00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView" />
+ 
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Carebook</string>
+    <string name="action_settings">Settings</string>
+    <string name="room_selection_intro">WebRTC Demo</string>
+    <string name="input_room_name_hint">Enter Room Name</string>
+    <string name="input_username_hint">Enter Username</string> 
+    <string name="button_join_room">Join</string>
+    <string name="select_stream">Select Stream:</string>
+    <string name="error">The session failed to connect</string>
+    <string name="error_title">OpenTokRTC Error</string>
+    <string name="author">Powered by OpenTok</string>
+    <string name="welcome_text_chat">Welcome to OpenTokRTC by TokBox. \n</string>
+    <string name="nick">/nick </string>
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="swapStr">Swap camera</string>
+    <string name="endCall1">End call</string>
+    <string name="endCall2">End</string>
+    <string name="audioOnly">Audio only</string>
+    <string name="send">send</string>
+    <string name="chatStr">Text chat</string>
+    <string name="shareStr">Share link</string>
+    <string name="archivingOn">Archiving on</string>
+    <string name="archivingOff">Archiving off</string>
+    <string name="sharingLink">Please join me at</string>
+    <string	name="clearNotificationService">Clear Notification</string>
+    
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="toolkit_login_create_account">Create Account</string>
+    <string name="toolkit_login_continue">Continue</string>
+    <string name="toolkit_login_sign_in">Sign In</string>
+    <string name="toolkit_login_prompt_email">Email</string>
+    <string name="toolkit_login_prompt_username">Username</string>
+    <string name="toolkit_login_progress_signing_in">Signing In…</string>
+    <string name="toolkit_login_password">Password</string>
+    <string name="toolkit_login_password_confirmation">Confirm Password</string>
+    <string name="toolkit_login_password_reset_prompt">Forgot Password?</string>
+    <string name="toolkit_login_submit">Submit</string>
+    <string name="toolkit_login_password_reset_instructions">Enter your email associated with your account, we will send you instructions on how to reset your password</string>
+    <string name="toolkit_login_questions">Questions? Call 650–701–3621</string>
+    <string name="toolkit_login_first_name">First Name</string>
+    <string name="toolkit_login_last_name">Last Name</string>
+    <string name="toolkit_login_sign_up">Sign Up</string>
+    <string name="toolkit_login_tos_disclaimer">"By signing up, you agree to drchrono's "<u>Terms Of Service</u>.</string>
+    <string name="toolkit_login_phone">Phone number</string>
+    <string name="toolkit_login_specialty">Specialty</string>
+    <string name="toolkit_login_job_title">Job Title</string>
+    <string name="toolkit_login_practice_size">Number of providers</string>
+    <string name="toolkit_login_practice_type">Practice type</string>
+    <string name="toolkit_login_ok">Okay</string>
+    <string name="toolkit_login_weak_password">Password is too short</string>
+    <string name="toolkit_login_error_password_not_match">Passwords do not match</string>
+    <string name="toolkit_login_error">Incorrect</string>
+    <string name="toolkit_login_pin">Enter your PIN</string>
+    <string name="toolkit_login_with_pin_prompt">Login with Pin</string>
+    <string name="toolkit_login_with_password_prompt">Login with Password</string>
+    <string name="app_name_short">Carebook</string>
+    <string name="menu_camera">Camera</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_notmatching_password">Passwords do not match</string>
+    <string name="error_long_string">Too long</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="menu_settings">Logout</string>
+    <string name="flurry_key">WCYMK3TPRV9CMR69V9BF</string>
+    <string name="amplitude_key">b3d5ca89e16c8df217c6d72d234499d3</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">"Sorry, there's no web browser available"</string>
+    <string name="logging_out">Logging out…</string>
+    <string name="placeholder">This page coming soon!</string>
+    <string name="refresh">Refresh</string>
+    <string name="reason_for_visit">Reason for visit</string>
+    <string name="assesment">Assesment</string>
+    <string name="plan">Plan</string>
+    <string name="clinical_summary">Clinical Summary</string>
+    <string name="next">Next</string>
+    <string name="action_password_reset">Reset Password</string>
+    <string name="title_select_office">Select Office</string>
+    <string name="title_select_doctor">Select Doctor</string>
+    <string name="title_select_appointment_time">Select Appointment Time</string>
+    <string name="title_visit_summary">Visit Summary</string>
+    <string name="loading">Loading…</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="action_sign_in_register"><b>Sign in</b> or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="login_progress_signing_in">Signing in…</string>
+    <string name="error_incorrect_credentials">Could not sign in, check your email and password</string>
+    <string name="menu_register">Register</string>
+    <string name="main_progress_loading">Loading...</string>
+    <string name="title_activity_registration">Register</string>
+    <string name="tos">"By signing up, you confirm that you accept drchrono's "<u>terms of service.</u></string>
+    <string name="action_register">Register</string>
+    <string name="prompt_first_name">First Name</string>
+    <string name="prompt_last_name">Last Name</string>
+    <string name="prompt_password_confirm">Confirm Password</string>
+    <string name="prompt_gender_male">Male</string>
+    <string name="prompt_gender_female">Female</string>
+    <string name="prompt_gender_other">Other</string>
+    <string name="registration_progress_registering">Registering…</string>
+    <string name="error_registration_dupe_user">Error, this user already exists</string>
+    <string name="error_regisration">"An error occurred, could't register"</string>
+    <string name="success_regisration">Regisration successful</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Documents</item>
+        <item>Consult a Doctor</item>
+        <item>Settings</item>
+        <item>About Us</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_documents</item>
+        <item>@drawable/ic_consult_a_doctor</item>
+        <item>@drawable/ic_settings</item>
+        <item>@drawable/ic_about_us</item>
+    </array>
+    
+</resources>

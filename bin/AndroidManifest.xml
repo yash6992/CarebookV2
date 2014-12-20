@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tokbox.android.opentokrtc"
+    android:versionCode="6"
+    android:versionName="2.3.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_icon_app"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service android:name="ClearNotificationService" >
+            <intent-filter android:label="@string/clearNotificationService" >
+                <action android:name="com.tokbox.android.opentokrtc.ClearNotificationService" />
+            </intent-filter>
+        </service>
+         <activity
+            android:name="com.tokbox.android.opentokrtc.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- DashBoard / MainActivity -->
+        <activity
+            android:name="com.tokbox.android.opentokrtc.LoginActivity"
+            android:label="User Login" >
+        </activity>
+        <activity
+            android:name="com.tokbox.android.opentokrtc.RegisterActivity"
+            android:label="User Register" >
+        </activity>
+        <activity
+            android:name="com.tokbox.android.opentokrtc.ProfileViewActivity"
+            android:label="Profile"
+            android:parentActivityName="com.tokbox.android.opentokrtc.MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tokbox.android.opentokrtc.ProfileViewActivity" />
+        </activity>
+        <activity
+            android:name="com.tokbox.android.opentokrtc.ProfileEditActivity"
+            android:label="Edit Profile"
+            android:parentActivityName="com.tokbox.android.opentokrtc.ProfileViewActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tokbox.android.opentokrtc.ProfileViewActivity" />
+        </activity>
+        <activity
+            android:name="com.tokbox.android.opentokrtc.ChangePasswordActivity"
+            android:label="Change Password" >
+        </activity>
+        <activity
+            android:name="com.tokbox.android.opentokrtc.HomeActivity"
+            android:clearTaskOnLaunch="false"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            
+        </activity>
+        <activity
+            android:name="com.tokbox.android.opentokrtc.ChatRoomActivity"
+            android:clearTaskOnLaunch="false"
+            android:configChanges="orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.tokbox.android.qrcode.Screen1_SplashScreen"
+            android:label="Click" >
+           
+        </activity>
+        <activity
+            android:name="com.tokbox.android.qrcode.DecoderActivity"
+            android:label="Camera" >
+        </activity>
+    </application>
+
+</manifest>

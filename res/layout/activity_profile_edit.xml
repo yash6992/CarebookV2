@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:background="@drawable/bg1"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/profilePicEdit"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp" android:layout_marginTop="15dp"
+        android:src="@drawable/pp" />
+
+    
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+         android:layout_alignLeft="@+id/profilePicEdit"
+        android:layout_below="@+id/profilePicEdit"
+        android:layout_marginTop="25dp" android:layout_marginRight="15dp">
+        
+
+        <LinearLayout
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <LinearLayout
+        android:layout_width="match_parent" android:layout_margin="5dp"
+        android:layout_height="wrap_content" android:background="@drawable/shape3" 
+       
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email id:"
+            android:textSize="15dp"
+            />
+
+        <EditText
+            android:id="@+id/emailIdEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jainaayush05@gmail.com"
+            android:textSize="18dp" android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    
+              <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:background="@drawable/shape3" 
+       android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phone no. :" android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/phoneNoEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9458682229" android:inputType="number"
+            android:textSize="18dp" android:textStyle="bold" />
+
+    </LinearLayout>
+    
+                <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:background="@drawable/shape3" 
+       android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="blood group:" android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/bloodGroupEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B+"
+            android:textSize="18dp" android:textStyle="bold" />
+
+    </LinearLayout>
+    
+                  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:background="@drawable/shape3" 
+       android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="address:" android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/address1Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B-22"
+            android:textSize="18dp" android:textStyle="bold" />
+        <EditText
+            android:id="@+id/address2Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Door Sanchar Colony"
+            android:textSize="18dp" android:textStyle="bold" />
+        <EditText
+            android:id="@+id/address3Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indore-M.P."
+            android:textSize="18dp" android:textStyle="bold" />
+
+    </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="match_parent" android:orientation="horizontal"
+                      android:layout_height="wrap_content" >
+        <LinearLayout
+        android:layout_width="match_parent" android:layout_weight="1"
+        android:layout_height="wrap_content" android:background="@drawable/shape3" 
+       android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="age:" android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/ageEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22" android:inputType="number"
+            android:textSize="18dp" android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_weight="1"
+        android:layout_height="wrap_content" android:background="@drawable/shape3" 
+       android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gender:" android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/genderEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="18dp" android:textStyle="bold" />
+
+    </LinearLayout>
+                  </LinearLayout>
+                  <Button
+        android:id="@+id/confirmChanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textStyle="bold" android:textColor="#ffffff"
+        android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="15dp"
+        android:layout_alignParentLeft="true" android:background="@drawable/button_selector"
+        android:layout_marginTop="5dp"
+        android:text="Confirm Changes" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/lastNameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scrollView1"
+        android:layout_alignLeft="@+id/firstNameEdit"
+        android:text="Jain"
+        android:textColor="#adbece"
+        android:textSize="33dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/firstNameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lastNameEdit"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/profilePicEdit"
+        android:text="Aayush"
+        android:textColor="#adbece"
+        android:textSize="33dp"
+        android:textStyle="bold" />
+
+    
+
+</RelativeLayout>
