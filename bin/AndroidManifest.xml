@@ -45,6 +45,10 @@
             android:label="User Register" >
         </activity>
         <activity
+            android:name="com.tokbox.android.opentokrtc.MakeAccountActivity"
+            android:label="User Account Creation" >
+        </activity>
+        <activity
             android:name="com.tokbox.android.opentokrtc.ProfileViewActivity"
             android:label="Profile"
             android:parentActivityName="com.tokbox.android.opentokrtc.MainActivity" >

@@ -117,6 +117,78 @@ public class ServiceHandler {
 		return response;
 
 	}
+	public String makeServiceCallWithPatient(String url, int method,
+			ArrayList<NameValuePair> params,String authentication_token,String email) throws JSONException {
+		try {
+			// http client
+			DefaultHttpClient httpClient = new DefaultHttpClient();
+			HttpEntity httpEntity = null;
+			HttpResponse httpResponse = null;
+			
+			
+			
+			// Checking http request method type
+			if (method == POST) {
+//				HttpPost httpPost = new HttpPost(url);
+//				// adding post params
+//				if (params != null) {
+//					httpPost.setEntity(new UrlEncodedFormEntity(params));
+//				}
+//
+//				httpResponse = httpClient.execute(httpPost);
+				 //instantiates httpclient to make request
+			    DefaultHttpClient httpclient = new DefaultHttpClient();
+
+			    //url with the post data
+			    HttpPost httpost = new HttpPost(url);
+			    
+
+			    //convert parameters into JSON object
+			    JSONObject holder = getJsonObjectFromMap("patient",params);
+
+			    //passes the results to a string builder/entity
+			    StringEntity se = new StringEntity(holder.toString());
+
+			    //sets the post request as the resulting string
+			    httpost.setEntity(se);
+			    //sets a request header so the page receving the request
+			    //will know what to do with it
+			    httpost.setHeader("Accept", "application/json");
+			    httpost.setHeader("Content-type", "application/json");
+			    httpost.setHeader("X-User-Token", authentication_token);
+			    httpost.setHeader("X-User-Email", email);
+			    
+
+			    //Handles what is returned from the page 
+			   // ResponseHandler responseHandler = new BasicResponseHandler();
+			    httpResponse = httpclient.execute(httpost);
+
+			} else if (method == GET) {
+				// appending params to url
+				if (params != null) {
+					String paramString = URLEncodedUtils
+							.format(params, "utf-8");
+					url += "?" + paramString;
+				}
+				HttpGet httpGet = new HttpGet(url);
+
+				httpResponse = httpClient.execute(httpGet);
+
+			}
+			httpEntity = httpResponse.getEntity();
+			response = EntityUtils.toString(httpEntity);
+
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		} catch (ClientProtocolException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		return response;
+
+	}
 	private static JSONObject getJsonObjectFromMap(String key,ArrayList<NameValuePair> params) throws JSONException {
 
 	    //all the passed parameters from the post request

@@ -168,17 +168,28 @@ public class RegisterActivity extends Activity {
 		            Log.e("ServiceHandler", "Couldn't get any data from the url");
 		        } 
 			 Log.e("Response:", ""+code);
+			 String authenticationToken="";String id="";
 		    if(code==0){
-		    	String authenticationToken="";
+		    	
 		    	try {
 					JSONObject dataObject = jsonObj.getJSONObject("data");
 					authenticationToken=dataObject.getString("authentication_token");
+
+					id=dataObject.getString("id");
 				} catch (JSONException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 		    	
-			Intent i = new Intent(getApplicationContext(), LoginActivity.class);
+			Intent i = new Intent(getApplicationContext(), MakeAccountActivity.class);
+			i.putExtra("authentication_token",authenticationToken);
+			i.putExtra("email",emailId.getText().toString().trim());
+			i.putExtra("name",fullName.getText().toString().trim());
+			i.putExtra("user_id", id);
+			if(phoneNo.getText().toString().trim().length()>0)
+				i.putExtra("phone_no", phoneNo.getText().toString().trim());
+			else
+				i.putExtra("phone_no", "NULL");
 			Log.e("Response:", authenticationToken);
 		    
 			//i.putExtra("jsonStr", jsonStr);
